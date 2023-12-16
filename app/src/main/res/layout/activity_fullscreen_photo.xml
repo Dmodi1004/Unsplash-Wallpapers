@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream_ultra_light"
+    tools:context=".Activities.FullscreenPhotoActivity">
+
+    <ImageView
+        android:id="@+id/activityFullscreenPhotoPhoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B39C6644"
+        android:elevation="11dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/activityFullscreenPhotoUserAvatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_avatar" />
+
+        <TextView
+            android:id="@+id/activityFullscreenPhotoUserName"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Dhruv Modi"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/activityFullscreenPhotoFabMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:fab_hideAnimation="@anim/fab_scale_down"
+        app:fab_showAnimation="@anim/fab_scale_up"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu_colorNormal="#794D2F"
+        app:menu_colorPressed="#794D2F"
+        app:menu_colorRipple="@color/cream"
+        app:menu_icon="@drawable/ic_open">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/activityFullscreenPhotoFabFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_favorite_white"
+            app:fabSize="mini"
+            app:fab_colorNormal="@color/brown"
+            app:fab_colorPressed="@color/brown"
+            app:fab_colorRipple="@color/cream"
+            app:fab_label="Favorite"
+            app:fab_showShadow="true" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/activityFullscreenPhotoFabWallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wallpaper"
+            app:fabSize="mini"
+            app:fab_colorNormal="@color/brown"
+            app:fab_colorPressed="@color/brown"
+            app:fab_colorRipple="@color/cream"
+            app:fab_label="Wallpaper"
+            app:fab_showShadow="true" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

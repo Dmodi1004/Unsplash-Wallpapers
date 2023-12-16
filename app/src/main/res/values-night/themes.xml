@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.UnsplashWallpapers" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/brown_light</item>
+
+        <item name="fontFamily">@font/gotu</item>
+
+        <item name="drawableNavigationItemBackground">@drawable/menu_background_color_state</item>
+
+    </style>
+
+    <style name="Theme.UnsplashWallpapers" parent="Base.Theme.UnsplashWallpapers" />
+
+    <style name="Widget.Custom.NavigationView" parent="Widget.Design.NavigationView">
+        <item name="itemIconTint">?attr/colorNavigationItem</item>
+        <item name="itemTextColor">?attr/colorNavigationItem</item>
+        <item name="itemBackground">?attr/drawableNavigationItemBackground</item>
+    </style>
+
+</resources>

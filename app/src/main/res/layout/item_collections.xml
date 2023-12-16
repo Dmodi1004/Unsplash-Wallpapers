@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp">
+
+    <com.example.unsplashwallpapers.Utils.SquareImageView
+        android:id="@+id/itemCollectionPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/itemCollectionTitle"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:text="Beatiful Mountain"
+            android:textAlignment="center"
+            android:textColor="@color/cream_ultra_light"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/itemCollectionTotalPhotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="12 Photos"
+            android:textColor="@color/cream_ultra_light"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
